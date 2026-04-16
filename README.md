@@ -21,11 +21,11 @@ An independent reimplementation of **"Physics of Language Models: Part 3.1, Know
 
 ---
 
-## Two Non-Trivial Bugs Found During Replication
+## Bugs Found During Replication
 
 Getting from ~7% to 97.5% required finding and fixing two bugs that are easy to introduce and hard to diagnose. Documenting them here for anyone attempting their own replication.
 
-### Bug 1 — Pretrain data was not shuffled
+###  Pretrain data was not shuffled
 
 **What happened:** `generate_bios.py` produced bios grouped by person: all 5 paraphrases of person 0, then all 5 of person 1, etc. `tokenize_bios.py` concatenated them in that order. The dataloader read sequential 512-token windows with no shuffling.
 
