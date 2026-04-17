@@ -23,7 +23,7 @@ An independent reimplementation of **"Physics of Language Models: Part 3.1, Know
 
 ## Bugs Found During Replication
 
-Getting from ~7% to 97.5% required finding and fixing two bugs that are easy to introduce and hard to diagnose. Documenting them here for anyone attempting their own replication.
+Getting from ~7% to 97.5% required finding and fixing bugs that are easy to introduce and hard to diagnose. Documenting them here for anyone attempting their own replication.
 
 ###  Pretrain data was not shuffled
 
@@ -55,7 +55,7 @@ I used 4xH100 for pretraining ~12 hours for multi5p and less than 2 hours for si
 
 ## Reproducing the Main Result
 
-The full pipeline runs in three steps. SLURM scripts for Jean Zay are provided in `scripts/`.
+The full pipeline runs in three steps and are provided in `scripts/`.
 
 ### Step 1 — Generate data
 
