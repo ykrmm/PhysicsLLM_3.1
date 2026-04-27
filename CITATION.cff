@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below. This is an unofficial implementation of the paper 'PhysicsLLM'."
+authors:
+- family-names: "Karmim"
+  given-names: "Yannis"
+title: "PhysicsLLM_3.1: Open-source implementation"
+version: "1.0.0"
+date-released: 2024-05-22
+url: "https://github.com/ykrmm/PhysicsLLM_3.1"
